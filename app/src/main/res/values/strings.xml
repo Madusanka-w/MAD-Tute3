@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">IntentsProj</string>
+    <string name="tv_num1">Number 1</string>
+    <string name="tv_num2">Number 2</string>
+    <string name="tx_one" />
+    <string name="tx_two" />
+    <string name="tv_number1">Number 1</string>
+    <string name="tv_number2">"Number 2 "</string>
+    <string name="tx_nOne" />
+    <string name="tx_nTwo" />
+    <string name="tx_ans" />
+    <string name="tv_display" />
+</resources>

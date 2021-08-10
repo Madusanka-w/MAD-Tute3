@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:id="@+id/tv_number1"
+        android:layout_width="104dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/tv_number1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_number2"
+        android:layout_width="98dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/tv_number2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_number1" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="189dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="60dp"
+        android:onClick="Add"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_display" />
+
+    <Button
+        android:id="@+id/btn_mul"
+        android:layout_width="174dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="8dp"
+        android:onClick="onClickMultiple"
+        android:text="*"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btn_add" />
+
+    <Button
+        android:id="@+id/btn_sub"
+        android:layout_width="188dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="84dp"
+        android:onClick="onClickSubtrack"
+        android:text="-"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add" />
+
+    <Button
+        android:id="@+id/btn_div"
+        android:layout_width="172dp"
+        android:layout_height="54dp"
+        android:onClick="onClickDivide"
+        android:text="/"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btn_sub"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.655"
+        app:layout_constraintStart_toEndOf="@+id/btn_sub" />
+
+    <EditText
+        android:id="@+id/tx_nOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_number1"
+        app:layout_constraintStart_toEndOf="@+id/tv_number1"
+        tools:text="@string/tx_nOne" />
+
+    <EditText
+        android:id="@+id/tx_nTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_number2"
+        app:layout_constraintStart_toEndOf="@+id/tv_number2"
+        tools:text="@string/tx_nTwo" />
+
+    <TextView
+        android:id="@+id/tv_display"
+        android:layout_width="224dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/tv_display"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_number2"
+        tools:text="@string/tv_display" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
